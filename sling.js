@@ -14,15 +14,15 @@ class Sling{
   World.add(world,this.sling);
 }
  display(){
-     if(this.sling,bodyA){
+     
          var pointA = this.sling.bodyA.position;
          var pointB = this.pointB;
          push()
-         strokeWeight(10);
+         strokeWeight(2);
          stroke("white");
          line(pointB.x,pointB.y,pointA.x,pointA.y);
          pop()
-     }
+     
  }
     
 }
