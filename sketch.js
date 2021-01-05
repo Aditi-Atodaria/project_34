@@ -36,6 +36,10 @@ function draw(){
     pendulum2.display();
     pendulum3.display();
     pendulum4.display();
+     string1.display();
+    string2.display();
+    string3.display();
+    string4.display();
 
     
     
