@@ -18,8 +18,8 @@ class Sling{
          var pointA = this.sling.bodyA.position;
          var pointB = this.pointB;
          push()
-         strokeWeight(3.5);
-         stroke("#fff");
+         strokeWeight(10);
+         stroke("white");
          line(pointB.x,pointB.y,pointA.x,pointA.y);
          pop()
      }
