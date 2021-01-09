@@ -11,6 +11,15 @@ function setup(){
 canvas = createCanvas(windowWidth / 2,windowHeight/1.5);
 engine = Engine.create();
 world = engine.world;
+    
+let canvasmouse = Mouse.create(canvas.elt);
+canvasmouse.pixelRatio = pixelDensity();
+let options={
+    mouse:canvasmouse
+};
+mConstraint = MouseComstraint.create(engine,options);
+World.add(world,mConstraint);    
+    
 Engine.run(engine);
 
 pendulum1 = new Pendulum(140,100,"pink");
