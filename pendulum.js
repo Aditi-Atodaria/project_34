@@ -5,6 +5,7 @@ class Pendulum{
          friction:0,
          frictionAir:0.0,
          slop:1,
+         density:2,   
          intertia:Infinity
         }
         this.body = Bodies.rectangle(x,y,40,40,options);
