@@ -11,7 +11,13 @@ function setup(){
 canvas = createCanvas(windowWidth / 2,windowHeight/1.5);
 engine = Engine.create();
 world = engine.world;
-    
+let canvasmouse = Mouse.create(canvas.elt);
+canvasmouse.pixelRatio=pixelDensity();
+let options = {
+    mouse:canvasmouse
+};
+mConstraint = MouseConstraint.create(engine,options);
+World.add(world,.Constraint);
 
 
     
@@ -48,6 +54,10 @@ function draw(){
     
     
 
+}
+
+function mouseDragged(){
+Matter.Body.setPosition(pendulum1.body{x:mouseX, y:mouseY});
 }
 
 
