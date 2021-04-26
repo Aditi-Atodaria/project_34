@@ -17,7 +17,7 @@ let options = {
     mouse:canvasmouse
 };
 mConstraint = MouseConstraint.create(engine,options);
-// World.add(world,.Constraint);
+World.add(world,Constraint);
 
 
     
